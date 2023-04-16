@@ -136,7 +136,6 @@ img.logo {
         opacity: 0;
     }
 }
-
 /* 
 =========================================================================
 hero grid & hero image
@@ -349,7 +348,6 @@ section: my skills
         margin: 10% 10% 10% 40%;
     }
 }
-
 /* 
 =========================================================================
 section: my tools
@@ -456,7 +454,6 @@ section: my works
 @media only screen and (max-width:992px) {
 
 }
-
 /* 
 =========================================================================
 section: contact
@@ -498,15 +495,11 @@ section: contact
         margin: 10% 40% 10% 10%;
     }
 }
-
-
-
 /* 
 =========================================================================
 footer
 ========================================================================= 
 */
-
 #footerGrid {
     background-color: var(--color-pink);
     display: grid;
@@ -624,3 +617,46 @@ footer
         padding: 50% 0%;
     }
 }
+/* 
+=========================================================================
+javascript: emergence
+========================================================================= 
+*/
+.about-underline[data-emergence] {
+    transition: all 5s ease;
+}
+
+/* 
+=========================================================================
+animations
+========================================================================= 
+*/
+.slide-in-left {
+	animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.slide-in-right {
+	animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
