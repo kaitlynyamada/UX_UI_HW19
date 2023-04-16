@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <!--viewport-->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
         <!--header(logo & nav)-->
@@ -19,7 +21,25 @@
             <a href="">
                 <img src="/UX_UI_HW18/images/K8_logo.png" alt="logo" class="logo">
             </a>
-         <!--nav-->
+         <!--nav mobile-->
+            <div class="mobile">
+            <button type="button" class="mobile-menu"><i class="bi bi-list"></i>
+            </button>
+                <nav class="nav-mobile">
+                    <ul>
+                        <li>
+                            <a href="">about me</a>
+                        </li>
+                        <li>
+                            <a href="">my work</a>
+                        </li>
+                        <li>
+                            <a href="">about me</a>
+                        </li>
+                        </ul>
+                </nav>
+            </div>
+         <!--nav primary-->
             <nav class="nav-primary">
                 <ul>
                      <li>
@@ -183,10 +203,5 @@
         </footer>
         <!--javascript-->
         <script src="js/script.js"></script>
-        <script src="/UX_UI_HW19/js/emergence.min.js">
-        </script>
-        <script>
-            emergence.init();
-        </script>
     </body>
 </html>

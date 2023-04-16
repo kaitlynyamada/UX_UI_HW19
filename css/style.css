@@ -111,7 +111,7 @@ img.logo {
     width: 206px;
     height: 178px;
 }
-
+/*nav primary: desktop*/
 .nav-primary ul {
     list-style: none;
     display: flex;
@@ -128,12 +128,45 @@ img.logo {
     text-transform: uppercase;
     color: var(--color-violet);
 }
+/*nav for mobile*/
+.nav-mobile {
+    background: var(--color-pink);
+
+}
+
+.nav-mobile ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-mobile ul li {
+    margin: 0 10px;
+}
+
+.nav-mobile ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-violet);
+}
 
 /*media query for header*/
 /*small*/
 @media only screen and (max-width:576px) {
     .nav-primary {
-        opacity: 0;
+       display: none;
+    }
+}
+/*medium*/
+@media only screen and (max-width:768px) {
+    .nav-primary {
+        display: none;
+     }
+}
+/*large*/
+@media (max-width:992px) {
+    .mobile {
+        display: none;
     }
 }
 /* 
@@ -617,15 +650,6 @@ footer
         padding: 50% 0%;
     }
 }
-/* 
-=========================================================================
-javascript: emergence
-========================================================================= 
-*/
-.about-underline[data-emergence] {
-    transition: all 5s ease;
-}
-
 /* 
 =========================================================================
 animations
