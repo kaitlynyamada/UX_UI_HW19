@@ -89,12 +89,57 @@ p.small {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
+    color: lightgray;
 }
 
 p.bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+/* 
+=========================================================================
+buttons
+========================================================================= 
+*/
+.button-primary {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--color-violet);
+}
+
+.button-primary a {
+    text-decoration: none;
+    color: var(--color-eggplant);
+}
+
+.button-secondary {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    padding: 20px 55px 20px 55px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--color-violet);
+}
+
+.button-secondary a {
+    text-decoration: none;
+    color: var(--color-eggplant)
+}
+
+.button-hover {
+    background-color: var(--color-violet);
+    text-decoration-color: white;
+}
+
+.button-hover a {
+    color: white;
+}
+
 /* 
 =========================================================================
 header
@@ -156,19 +201,45 @@ img.logo {
     .nav-primary {
        display: none;
     }
+    
+    .navmobile {
+        display: contents;
+    }
 }
 /*medium*/
 @media only screen and (max-width:768px) {
     .nav-primary {
         display: none;
      }
+     .navmobile {
+        display: contents;
+     }
 }
 /*large*/
-@media (max-width:992px) {
-    .mobile {
+@media only screen and (max-width:992px) {
+    .navmobile {
+        display: none;
+     }
+}
+/*xlarge*/
+@media only screen and (max-width:1200px) {
+    .navmobile {
+        display: none;
+     }
+}
+/*xxlarge*/
+@media only screen and (max-width:1400px) {
+    .navmobile {
+        display: none;
+     }
+}
+
+@media only screen and (min-width:1400px) {
+    .navmobile {
         display: none;
     }
 }
+
 /* 
 =========================================================================
 hero grid & hero image
@@ -465,6 +536,11 @@ section: my works
     display: flex;
 }
 
+/*See More*/
+.works-more {
+    display: flex;
+    justify-content: center;
+}
 
 /* media query for works section*/
 /*small*/
@@ -524,8 +600,9 @@ section: contact
 
 /*large*/
 @media only screen and (max-width:992px) {
-    .contact-content {
-        margin: 10% 40% 10% 10%;
+    .contact-content p {
+        width: auto;
+        height: 40px;
     }
 }
 /* 
@@ -682,5 +759,20 @@ animations
     100% {
       transform: translateX(0);
       opacity: 1;
+    }
+  }
+
+
+.shadow-drop-bottom {
+	animation: shadow-drop-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-bottom {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+      border: 2px solid var(--color-pink);
     }
   }
