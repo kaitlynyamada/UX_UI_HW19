@@ -106,7 +106,7 @@ buttons
     background: white;
     padding: 15px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     border: 2px solid var(--color-violet);
 }
@@ -121,7 +121,7 @@ buttons
     background: white;
     padding: 20px 55px 20px 55px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     border: 2px solid var(--color-violet);
 }
@@ -520,7 +520,7 @@ section: my works
 
 .works-content__water {
     padding:25px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .water-tags {
     display: flex;
@@ -529,7 +529,7 @@ section: my works
 /*SARA'S TREASURES*/
 .works-content__sara {
     padding: 25px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .sara-tags {
