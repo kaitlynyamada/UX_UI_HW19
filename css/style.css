@@ -589,6 +589,10 @@ section: contact
     .contact-content {
         margin: 5%;
     }
+    
+    h5 {
+        font-size: 22px;
+    }
 }
 
 /*medium*/
