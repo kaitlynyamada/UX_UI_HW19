@@ -197,47 +197,41 @@ img.logo {
 
 /*media query for header*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     .nav-primary {
        display: none;
     }
     
     .navmobile {
-        display: contents;
+        display: flex;
     }
 }
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     .nav-primary {
         display: none;
      }
      .navmobile {
-        display: contents;
+        display: flex;
      }
 }
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     .navmobile {
         display: none;
      }
 }
 /*xlarge*/
-@media only screen and (max-width:1200px) {
+@media only screen and (min-width:1200px) {
     .navmobile {
         display: none;
      }
 }
 /*xxlarge*/
-@media only screen and (max-width:1400px) {
-    .navmobile {
-        display: none;
-     }
-}
-
 @media only screen and (min-width:1400px) {
     .navmobile {
         display: none;
-    }
+     }
 }
 
 /* 
@@ -303,7 +297,7 @@ img.hero-visual__image {
 
 /*media queries for hero section*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     #heroGrid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -330,7 +324,7 @@ img.hero-visual__image {
     }
 }
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     #heroGrid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -358,7 +352,7 @@ img.hero-visual__image {
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     #heroGrid {
         grid-template-rows: 50% 50%;
         grid-template-columns: 50% 50%;
@@ -392,21 +386,21 @@ section: about me
 
 /*media query for about section */
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     .about-content p {
         margin: 10%;
     }
 }
 
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     .about-content p {
         margin: 10%;
     }
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     .about-content p {
         margin: 10% 40% 10% 10%;
     }
@@ -433,21 +427,21 @@ section: my skills
 
 /*media query for skills section*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     .skills-content {
         margin: 10%;
     }
 }
 
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     .skills-content {
         margin: 10%;
     }
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     .skills-content {
         margin: 10% 10% 10% 40%;
     }
@@ -474,21 +468,21 @@ section: my tools
 
 /*media query for tools section*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     .tools-content {
         margin: 10%;
     }
 }
 
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     .tools-content {
         margin: 10%;
     }
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     .tools-content {
         margin: 10% 40% 10% 10%;
     }
@@ -544,7 +538,7 @@ section: my works
 
 /* media query for works section*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     .works-content {
         flex-direction: column;
         align-items: center;
@@ -552,7 +546,7 @@ section: my works
 }
 
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     .works-content {
         flex-direction: column;
         align-items: center;
@@ -560,7 +554,7 @@ section: my works
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
 
 }
 /* 
@@ -585,7 +579,7 @@ section: contact
 
 /*media query for contact section*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     .contact-content {
         margin: 5%;
     }
@@ -596,14 +590,14 @@ section: contact
 }
 
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     .contact-content {
         margin: 10%;
     }
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     .contact-content p {
         width: auto;
         height: 40px;
@@ -675,7 +669,7 @@ footer
 
 /*media query for footer*/
 /*small*/
-@media only screen and (max-width:576px) {
+@media only screen and (min-width:576px) {
     #footerGrid {
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -695,7 +689,7 @@ footer
 }
 
 /*medium*/
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
     #footerGrid {
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -717,7 +711,7 @@ footer
 }
 
 /*large*/
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:992px) {
     #footer-logo img {
         height: auto;
         width: 334px;
